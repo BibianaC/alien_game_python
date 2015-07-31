@@ -1,5 +1,4 @@
 import random
-import pdb
 
 class Alien(object):
 
