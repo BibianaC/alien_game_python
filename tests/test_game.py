@@ -8,3 +8,14 @@ def test_init():
     game = Game(player, alien)
     assert game.player == player
     assert game.alien == alien
+
+def test_switch_turns():
+    player = Player()
+    alien = Alien(5)
+    game = Game(player, alien)
+    assert game.turn == player
+    game.switch_turns()
+    assert game.turn == alien
+    assert game.turn != player
+    game.switch_turns()
+    assert game.turn == player
