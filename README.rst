@@ -12,7 +12,18 @@ In each player turn the player can set the firing angle alpha of the spaceship a
 
 The nozzle velocity v of the spaceship is fixed. 
 
-The spaceship ball hits the ground at this distance x_impact from the spaceship: x_impact = (2cos(alpha)sin(alpha)v^2)/g where g = 9.81 m/s^2 is the earth's gravitational acceleration. 
+The spaceship ball hits the ground at this distance x_impact from the spaceship: x_impact = (2cos(alpha)sin(alpha)v^2)/g where g = 9.81 m/s^2 is the earth's gravitational acceleration.
+
+## Tests
+
+Install test requirements::
+
+  pip install -r test_requirements.txt
+
+
+Run tests::
+
+  py.test 
 
 ## How to play
 
